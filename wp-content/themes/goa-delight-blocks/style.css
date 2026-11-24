@@ -1,0 +1,75 @@
+/*
+Theme Name: Goa Delight Caterers (Block Theme)
+Description: Full Site Editing theme: click any text or image to change font, colour, size, spacing and position.
+Version: 2.0.0
+Requires at least: 6.4
+Requires PHP: 7.4
+Text Domain: goa-delight
+*/
+:root{--gd-orange:#FF7036;--gd-black:#101010;--gd-grey:#F5F5F5;--gd-gold:#F4B400}
+html{scroll-behavior:smooth}
+.wp-site-blocks>*+*,.wp-block-post-content>*{margin-block-start:0!important}
+.wp-block-post-content>*{margin-block-end:0}
+/* header */
+header.wp-block-template-part{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.gd-header{padding:8px 24px;min-height:70px;align-items:center}
+.gd-header .wp-block-navigation a{font-weight:600;color:#222;transition:color .25s}
+.gd-header .wp-block-navigation a:hover,.gd-header .wp-block-navigation .current-menu-item>a{color:var(--gd-orange)}
+.admin-bar header.wp-block-template-part{top:32px}
+/* sections */
+.gd-section{padding:70px 20px}.gd-black{background:var(--gd-black);color:#fff}.gd-grey{background:var(--gd-grey)}
+.gd-section h2{text-transform:uppercase}
+.gd-black h2{text-transform:none}
+.gd-sub{max-width:760px;margin-left:auto!important;margin-right:auto!important}
+.gd-black .wp-block-button__link{background:#2b2b2b;border:1px solid #555}
+.gd-btn-dark .wp-block-button__link{background:#2b2b2b;color:#fff}
+.gd-btn-gold .wp-block-button__link{background:var(--gd-gold);color:#111}
+.wp-block-button__link{transition:background .25s,transform .25s}.wp-block-button__link:hover{transform:translateY(-2px);filter:brightness(.92)}
+/* heroes */
+.gd-hero-home h1{font-size:clamp(34px,6vw,56px);font-weight:800;text-transform:uppercase;max-width:620px;margin-left:0}
+.gd-hero-home .wp-block-cover__inner-container{max-width:1140px;margin:0 auto;padding:0 20px;text-align:left}
+.gd-hero-home p{max-width:520px}
+.gd-hero-inner h1{font-family:var(--wp--preset--font-family--playfair);font-size:clamp(36px,7vw,64px);letter-spacing:3px;text-transform:uppercase;text-align:center}
+/* cards */
+.gd-card{background:#fff;border:1px solid #eee;border-radius:8px;padding:34px 26px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.07);transition:box-shadow .3s,transform .3s}
+.gd-card:hover{box-shadow:0 10px 26px rgba(255,112,54,.25);transform:translateY(-4px)}
+.gd-card svg{width:48px;height:48px;color:var(--gd-orange)}.gd-card h3{text-transform:uppercase;font-size:20px}
+.gd-cat{padding:14px;border-radius:8px;text-align:center;transition:background .3s}.gd-cat:hover{background:#eee}
+.gd-cat img,.gd-event img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;transition:transform .4s}
+.gd-event{border-radius:8px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.1);background:#fff}.gd-event figure{overflow:hidden;margin:0}
+.gd-event img{border-radius:0;aspect-ratio:16/9}.gd-event:hover img{transform:scale(1.05)}.gd-event .gd-body{padding:20px 24px}
+.gd-tcard{background:#fff;padding:28px;border-radius:8px;box-shadow:0 3px 12px rgba(0,0,0,.08)}
+.gd-stars{color:#f5b301;letter-spacing:3px;font-size:22px;margin:0}
+.gd-avatar img,.gd-chef-img img{width:56px;height:56px;border-radius:50%;object-fit:cover}.gd-chef-img img{width:120px;height:120px}
+.gd-chef-img{display:flex;justify-content:center}
+.gd-svc{border:4px solid #fff;outline:1px solid #333;text-align:center;padding:30px}.gd-svc h3{text-transform:uppercase}.gd-svc svg{width:46px;height:46px}
+/* menu */
+.gd-banner h2{font-family:var(--wp--preset--font-family--playfair);font-size:42px;text-transform:none;text-align:center}.gd-banner p{text-align:center;max-width:640px;margin:0 auto}
+.gd-menu-wrap{padding:50px 20px}.gd-menu-wrap h3{color:var(--gd-orange);text-transform:uppercase;border-bottom:2px solid var(--gd-orange);padding-bottom:6px}
+.gd-item{display:flex;gap:8px;font-weight:700;margin:18px 0 0}.gd-item strong{display:flex;flex:1;align-items:baseline;gap:8px}
+.gd-item strong::after{content:"";flex:1;border-bottom:2px dotted #999;transform:translateY(-4px)}
+.gd-desc{font-size:15px;color:#666;margin:0}
+/* about */
+.gd-box{border:2px solid #000;border-radius:6px;padding:36px;text-align:center}.gd-box svg{width:44px;height:44px}
+.gd-chefs{background:#fff8d9;border:2px dotted #c9a400;padding:50px 30px;text-align:center}
+.gd-quote{font-style:italic;font-size:22px;color:#444;max-width:760px;margin:0 auto!important}
+.gd-why-h{background:var(--gd-orange);color:#000;padding:36px 20px;margin:0}.gd-why-h h2{font-size:clamp(26px,4vw,38px);font-weight:800;margin:0;text-align:center;color:#000}
+.gd-check{padding-left:34px;position:relative;font-weight:600;margin:10px 0}.gd-check::before{content:"✔";position:absolute;left:0}
+/* contact */
+.gd-map iframe{width:100%;min-height:340px;border:0;border-radius:8px}
+.gd-resbanner{background:#111 center/cover;color:#fff}
+.gd-resform{max-width:760px;margin:20px auto;border:1px solid #b5651d;padding:36px;border-radius:6px}
+.gd-resform h2{text-align:center;text-transform:uppercase;font-weight:800}
+.gd-resform label{display:block;font-weight:600;font-size:15px;margin-bottom:4px}.req{color:#d00}
+.gd-resform input[type=text],.gd-resform input[type=email],.gd-resform input[type=tel],.gd-resform input[type=number],.gd-resform input[type=date],.gd-resform select,.gd-resform textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:4px;font:inherit;background:#fff}
+.gd-frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}.gd-fone{margin-bottom:16px}
+.gd-checks{display:grid;grid-template-columns:1fr 1fr;gap:4px 16px}.gd-checks label{font-weight:400}
+.gd-time{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.gd-resform button{background:var(--gd-gold);color:#111;border:0;padding:12px 30px;border-radius:4px;font:600 16px inherit;cursor:pointer}
+.gd-notice{padding:14px;border-radius:4px;margin-bottom:20px;text-align:center}.gd-ok{background:#e6f6e6}.gd-err{background:#fde8e8}
+/* footer */
+.gd-footer{background:#151515;color:#ccc;padding:60px 24px 20px;font-size:16px}.gd-footer h4{color:#fff;text-transform:uppercase;font-size:16px}
+.gd-footer a{color:#ccc;text-decoration:none}.gd-footer a:hover{color:var(--gd-orange)}.gd-footer p{margin:6px 0}
+.gd-copy{border-top:1px solid #333;margin-top:30px;padding-top:16px;text-align:center;font-size:14px}
+#gd-top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border:0;border-radius:4px;background:var(--gd-gold);font-size:20px;cursor:pointer;display:none;z-index:99}
+@media(max-width:781px){.gd-section{padding:50px 16px}.gd-frow,.gd-checks,.gd-time{grid-template-columns:1fr}}

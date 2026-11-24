@@ -1,0 +1,28 @@
+{
+ "$schema":"https://schemas.wp.org/trunk/theme.json","version":2,
+ "settings":{
+  "appearanceTools":true,
+  "layout":{"contentSize":"1140px","wideSize":"1280px"},
+  "color":{"palette":[
+   {"slug":"orange","name":"Orange","color":"#FF7036"},{"slug":"black","name":"Black","color":"#101010"},
+   {"slug":"white","name":"White","color":"#FFFFFF"},{"slug":"grey","name":"Light grey","color":"#F5F5F5"},
+   {"slug":"gold","name":"Gold","color":"#F4B400"},{"slug":"text","name":"Body text","color":"#222222"}]},
+  "typography":{"fontFamilies":[
+   {"slug":"afacad","name":"Afacad","fontFamily":"'Afacad', system-ui, sans-serif"},
+   {"slug":"playfair","name":"Playfair Display","fontFamily":"'Playfair Display', Georgia, serif"},
+   {"slug":"system","name":"System","fontFamily":"system-ui, sans-serif"}],
+   "fontSizes":[
+    {"slug":"small","name":"Small","size":"15px"},{"slug":"medium","name":"Medium","size":"18px"},
+    {"slug":"large","name":"Large","size":"24px"},{"slug":"x-large","name":"Extra large","size":"36px"},
+    {"slug":"xx-large","name":"Huge","size":"56px"}]},
+  "spacing":{"units":["px","em","rem","%","vw"]}
+ },
+ "styles":{
+  "color":{"background":"#FFFFFF","text":"#222222"},
+  "typography":{"fontFamily":"var(--wp--preset--font-family--afacad)","fontSize":"18px","lineHeight":"1.6"},
+  "spacing":{"blockGap":"1rem"},
+  "elements":{"link":{"color":{"text":"#FF7036"}},"heading":{"typography":{"fontFamily":"var(--wp--preset--font-family--afacad)","fontWeight":"700","lineHeight":"1.2"}}},
+  "blocks":{"core/button":{"color":{"background":"#FF7036","text":"#FFFFFF"},"border":{"radius":"4px"},"typography":{"fontWeight":"600","fontSize":"16px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"26px","right":"26px"}}}}
+ },
+ "templateParts":[{"name":"header","title":"Header","area":"header"},{"name":"footer","title":"Footer","area":"footer"}]
+}
